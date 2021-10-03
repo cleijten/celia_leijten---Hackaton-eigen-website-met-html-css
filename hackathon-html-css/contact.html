@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cee-art | Creaties van Celia Leijten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div id="logo"><img src="images/cee-art.png" /></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>Cee-art | Contact</h1>
+      </header>
+
+      <main>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Naam: * </label><br /><input type="text" name="name" required />
+          </p>
+          <p>
+            <label>E-mail: *</label><br /><input type="email" name="email" required />
+          </p>
+          <p>
+            <label>Telefoon:</label><br />
+            <input type="tel" name="tel" />
+          </p>
+
+          <p>
+            <label>Categorie: *</label><br />
+
+            <select name="categorie" required>
+              <option value="">- Selecteer een categorie -</option>
+              <option value="Digitaalportret">Digitaal portret</option>
+              <option value="meubel">Opknappen meubelstuk</option>
+              <option value="dtp">DTP klus</option>
+              <option value="website">Website design/dev</option>
+              <option value="anders">Iets anders/dev</option>
+            </select>
+          </p>
+
+          <p class="checkboxstyle">
+            <label>Favoriete stijl:</label> <br />
+            <input type="checkbox" name="modern" value="modern" />
+            <label>Modern</label>
+            <input type="checkbox" name="klassiek" value="klassiek" />
+            <label>Klassiek</label>
+            <input type="checkbox" name="kleurig" value="kleurig" />
+            <label>Kleurig</label>
+            <input type="checkbox" name="grafisch" value="grafisch" />
+            <label>Grafisch</label>
+            <input type="checkbox" name="popart" value="popart" />
+            <label>Pop-art</label>
+            <input type="checkbox" name="vintage" value="vintage" />
+            <label>Vintage</label>
+          </p>
+
+          <p>
+            <label>Upload foto:</label><br />
+            <input type="file" name="photo" />
+          </p>
+
+          <p>
+            <label>Omschrijving opdracht/vraag:</label><br />
+
+            <textarea name="message" rows="10" cols="50"></textarea>
+          </p>
+
+          <p>
+            <button type="reset">Maak formulier leeg</button>
+
+            <button type="submit">Versturen</button>
+          </p>
+          * Verplicht
+        </form>
+      </main>
+
+      <socialmenu>
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/celia.leijten/">Facebook</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/celialeijten/">Instagram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/celialeijten/">LinkedIn</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://nl.pinterest.com/c2202/boards/">Pinterest</a>
+          </li>
+        </ul>
+      </socialmenu>
+
+      <footer>&copy;<datetime>2021</datetime> – Celia Leijten</footer>
+    </div>
+  </body>
+
+</html>
